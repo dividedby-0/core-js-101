@@ -583,6 +583,9 @@ function getElementByIndexes(/* arr, indexes */) {
  *
  */
 function swapHeadAndTail(/* arr */) {
+  // const temp = arr.splice(0, arr.length / 2);
+  // const splitted = [...temp, ...arr];
+  // return splitted;
   throw new Error('Not implemented');
 }
 
