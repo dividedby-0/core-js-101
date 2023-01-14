@@ -86,7 +86,6 @@ function timeSpanToString(startDate, endDate) {
     .toString()
     .padStart(3, '0');
   return `${h}:${m}:${s}.${ms}`;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -106,6 +105,13 @@ function timeSpanToString(startDate, endDate) {
  *    Date.UTC(2016,3,5,21, 0) => Math.PI/2
  */
 function angleBetweenClockHands(/* date */) {
+  // function angleClock(hour, minutes) {
+  //   const minuteAngle = minutes * 6;
+  //   const hourAngle = hour * 30 + minutes * 0.5;
+  //   const angle = Math.abs(hourAngle - minuteAngle);
+  //   return Math.min(angle, 360 - angle);
+  // }
+  // return angleClock(date.getHours(), date.getMinutes());
   throw new Error('Not implemented');
 }
 
