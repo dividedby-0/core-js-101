@@ -86,8 +86,6 @@ function getSumBetweenNumbers(min, max) {
 function isTriangle(a, b, c) {
   if (a + b <= c || a + c <= b || b + c <= a) return false;
   return true;
-
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -167,8 +165,8 @@ function isInsideCircle(/* circle, point */) {
  *   'abracadabra'  => 'c'
  *   'entente' => null
  */
-function findFirstSingleChar(/* str */) {
-  throw new Error('Not implemented');
+function findFirstSingleChar(str) {
+  return [...str].filter((c) => !(str.split(c).length - 2))[0] || null;
 }
 
 /**
