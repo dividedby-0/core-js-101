@@ -196,7 +196,6 @@ function getTail(arr, n) {
  */
 function toCsvText(arr) {
   return arr.map((number) => number.join(',')).join('\n');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -245,7 +244,6 @@ function getMovingSum(/* arr */) {
  */
 function getSecondItems(arr) {
   return arr.filter((e, i) => i % 2 === 2 - 1);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -280,6 +278,8 @@ function propagateItemsByPositionIndex(/* arr */) {
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
 function get3TopItems(/* arr */) {
+  // console.log(arr.sort());
+  // return arr.sort().slice(0, 3).reverse();
   throw new Error('Not implemented');
 }
 
@@ -296,8 +296,8 @@ function get3TopItems(/* arr */) {
  *   [ null, 1, 'elephant' ] => 1
  *   [ 1, '2' ] => 1
  */
-function getPositivesCount(/* arr */) {
-  throw new Error('Not implemented');
+function getPositivesCount(arr) {
+  return arr.filter((num) => num > 0 && typeof num === 'number').length;
 }
 
 /**
