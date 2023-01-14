@@ -83,7 +83,6 @@ function getArrayOfPositives(arr) {
  */
 function getArrayOfStrings(arr) {
   return arr.filter((element) => typeof element === 'string');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -99,8 +98,8 @@ function getArrayOfStrings(arr) {
  *    [ 1, 2, 3, 4, 5, 'false' ]         => [ 1, 2, 3, 4, 5, 'false' ]
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
-function removeFalsyValues(/* arr */) {
-  throw new Error('Not implemented');
+function removeFalsyValues(arr) {
+  return arr.filter(Boolean);
 }
 
 /**
