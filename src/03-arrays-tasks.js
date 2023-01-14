@@ -358,6 +358,17 @@ function getItemsSum(arr) {
  *  [ null, undefined, NaN, false, 0, '' ]  => 6
  */
 function getFalsyValuesCount(/* arr */) {
+  // should work but conflicts with prettier
+  // return arr.filter(
+  //   (n) =>
+  //     n !== undefined &&
+  //     n !== null &&
+  //     n !== false &&
+  //     n !== 0 &&
+  //     n !== '' &&
+  //     !isNaN(n)
+  // ).length;
+
   throw new Error('Not implemented');
 }
 
@@ -375,8 +386,8 @@ function getFalsyValuesCount(/* arr */) {
  *    [ null, undefined, null ], null => 2
  *    [ true, 0, 1, 'true' ], true => 1
  */
-function findAllOccurrences(/* arr, item */) {
-  throw new Error('Not implemented');
+function findAllOccurrences(arr, item) {
+  return arr.filter((c) => c === item).length;
 }
 
 /**
