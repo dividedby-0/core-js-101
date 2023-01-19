@@ -356,17 +356,6 @@ function getItemsSum(arr) {
  *  [ null, undefined, NaN, false, 0, '' ]  => 6
  */
 function getFalsyValuesCount(/* arr */) {
-  // should work but conflicts with prettier
-  // return arr.filter(
-  //   (n) =>
-  //     n !== undefined &&
-  //     n !== null &&
-  //     n !== false &&
-  //     n !== 0 &&
-  //     n !== '' &&
-  //     !isNaN(n)
-  // ).length;
-
   throw new Error('Not implemented');
 }
 
@@ -459,6 +448,7 @@ function getIdentityMatrix(/* n */) {
   //       .fill(0)
   //       .map((elem2, j) => 1 - Math.min(Math.abs(i - j), 1))
   //   );
+  // return Array(n).fill().map(() => Array(n).fill());
   throw new Error('Not implemented');
 }
 
@@ -475,9 +465,10 @@ function getIdentityMatrix(/* n */) {
  *     0, 100 => [ 0, 1, 2, ..., 100 ]
  *     3, 3   => [ 3 ]
  */
-function getIntervalArray(/* start, end */) {
+function getIntervalArray(start, end) {
   // return Array.apply(0, Array(end)).map((element, index) => index + start);
-  throw new Error('Not implemented');
+  return Array(end - start + 1).fill().map((_, idx) => start + idx);
+  // throw new Error('Not implemented');
 }
 
 /**
