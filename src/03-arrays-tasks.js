@@ -561,6 +561,7 @@ function selectMany(/* arr, childrenSelector */) {
  *   [[[ 1, 2, 3]]], [ 0, 0, 1 ]      => 2        (arr[0][0][1])
  */
 function getElementByIndexes(/* arr, indexes */) {
+  // return arr[];
   throw new Error('Not implemented');
 }
 
@@ -583,9 +584,10 @@ function getElementByIndexes(/* arr, indexes */) {
  *
  */
 function swapHeadAndTail(/* arr */) {
-  // const temp = arr.splice(0, arr.length / 2);
-  // const splitted = [...temp, ...arr];
-  // return splitted;
+  // const half = Math.ceil(arr.length / 2);
+  // const firstHalf = arr.slice(0, half);
+  // const secondHalf = arr.slice(half);
+  // return [...secondHalf, ...firstHalf];
   throw new Error('Not implemented');
 }
 
