@@ -50,9 +50,9 @@ function generateOdds(/* len */) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(/* arr */) {
-  // return Array(2).fill(arr);
-  throw new Error('Not implemented');
+function doubleArray(arr) {
+  return arr.concat(arr);
+  // throw new Error('Not implemented');
 }
 
 /**
