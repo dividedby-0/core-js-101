@@ -210,9 +210,9 @@ function roundToPowerOfTen(/* num, pow */) {
  *   16 => false
  *   17 => true
  */
-function isPrime(/* n */) {
+function isPrime(n) {
   // return isPrime(n);
-  throw new Error('Not implemented');
+  return ![...Array(n).keys()].slice(2).map((i) => !(n % i)).includes(true) && ![0, 1].includes(n);
 }
 
 /**
